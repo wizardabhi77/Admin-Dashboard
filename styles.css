@@ -2,3 +2,34 @@
     margin:0;
     padding: 0;  
 }
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    border: 2px solid blue;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 2px solid greenyellow;
+}
+
+.sidebar {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: 2px solid violet;
+}
+
+.main-content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: gray;
+}
